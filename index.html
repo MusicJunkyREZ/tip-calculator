@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>Tip Calculator</title>
+</head>
+<body background="background.jpg">
+    <h1>Tip Calculator!</h1>
+
+    <section>
+        <div>
+            <form name="answer-form" onsubmit="return runIt()" method="get">
+                <h2>How much was your bill?</h2>
+                <!-- type="number" still takes e as a number -->
+                <input type="number" id="bill-amount" input="bill-amount"> 
+                <br><br>
+                <h2>How was your service?</h2>
+                    <div id="service-options">
+                    <input type="radio" name="rating-form" value="0.3" id="excellent"><label>Excellent 30%</label><br>
+                    <input type="radio" name="rating-form" value="0.2" id="good"><label>Good 20%</label><br>
+                    <input type="radio" name="rating-form" value="0.15" id="moderate"><label>Moderate 15%</label><br>
+                    <input type="radio" name="rating-form" value="0.1" id="bad"><label>Bad 10%</label><br>
+                    <input type="radio" name="rating-form" value="0.05" id="terrible"><label>Terrible 5%</label><br>
+                    </div>
+                <br>
+                <h2>How many people are splitting the bill?</h2>
+                <input type="number" name="number-of-people" id="number-of-people">
+                <br><br>
+                <input type="submit" onClick="return runIt()" method="get"></input>
+            </form>
+        </div>
+        <div class="answer">
+            <p>Tip per person:</p>
+            <p> $<span id="tip-per-person"></span></p>
+        </div>
+    </section>
+</body>
+
+
+</html>

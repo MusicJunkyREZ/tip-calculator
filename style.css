@@ -1,0 +1,37 @@
+* {
+    text-align: center;
+}
+
+body{
+    background-image: url("background.jpg");
+}
+
+#rating-form{
+    width: 250px;
+    height: 200px;
+    margin-left: 40%;
+}
+
+.answer{
+    display: none;
+}
+
+#service-options{
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 90px;
+}
+
+
+
+label{
+    float: left;
+}
+
+input[type="radio"]
+{
+  margin: 0 1em 0 0;
+  vertical-align: middle !important;
+  float: left;
+}
